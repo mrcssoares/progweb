@@ -1,0 +1,16 @@
+div{ 
+	padding: 2px;
+	padding-left: 40px;
+	padding-right: 40px;;	
+	background-color: #E8E8E8;
+	border-width: 11px;
+	border-style: solid;
+	border-color: black;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-top-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+p{
+
+}
