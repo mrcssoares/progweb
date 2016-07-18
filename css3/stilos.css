@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+	background-color: #D3D3D3;
+	background-image: url(icon.png);
+	background-repeat: no-repeat;
+	background-position: all;
+	background-size: 85px 38px;
+	margin: 15px;
+	background-position: 340px 0px;
+
+}
+img{
+}
+div{
+	background-color: #00FFFF;
+
+}
+a{
+	background-color: #00FFFF;
+}
+p{
+	text-align: justify
+}

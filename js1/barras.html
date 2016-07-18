@@ -6,15 +6,16 @@
 </head>
 <body>
 	<h2><b> Um gráfico de barras usando imagens</b></h2>
-	<form "myform">
-		Informe a altura das barras: <input type = "text" name= "val1" id = "campo1">
+	<form name="barras">
+		Informe a altura das barras:
+		<input type = "text" name = "val1" id = "campo1">
 		<input type = "text" name = "val2" id = "campo2">
 		<input type = "text" name = "val3" id = "campo3">
 		<input type = "text" name = "val4" id = "campo4">
 		</br>
 		Informe a largura da barra (em pixels): <input type = "text" name = "lar" id = "largura">
 		<br>
-		<input type="submit" id="desenhar" value="Desenhe o grafico" onclick="desenharGrafico(window.val1, window.val2, window.val3, window.val4, window.val5)">
+		<input type="button" id="desenhar" value="Desenhe o grafico" onclick="desenharGrafico(document.barras)">
 	</form>
 	<br>
 	<img src="img/vermelha.jpg" nome="img1" width="0" height="0">
@@ -24,14 +25,20 @@
 	<img src="img/vermelha.jpg" nome="img5" width="0" height="0">
 
 	<script type="text/javascript">
-		function desenharGrafico(nome){
-		nome.width = nome.width+50;
-		nome.height = nome.height+50;			
-	     }
-	     function tamanhoNormal(nome){
-		nome.width = 150;
-		nome.height = 30;			
-     }
-   </script>
+		function desenharGrafico(barras){
+			var imagens = document.images;
+				imagens[0].width = barras.lar.value;
+				imagens[0].height = barras.val1.value;
+
+				imagens[1].width = barras.lar.value;
+				imagens[1].height = barras.val2.value;
+
+				imagens[2].width = barras.lar.value;
+				imagens[2].height = barras.val2.value;
+
+				imagens[3].width = barras.lar.value;
+				imagens[3].height = barras.val3.value;
+	    }
+	</script>
 </body>
 </html>
